@@ -1,6 +1,6 @@
 schemaVersion: 2.1.0
 metadata:
-  name: lakehouse-jptest
+  name: lakehouse-jptest-access
   namespace: d867632-devspaces
 attributes:
   controller.devfile.io/devworkspace-config:
