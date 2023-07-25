@@ -11,7 +11,6 @@ components:
   - attributes:
       che-code.eclipse.org/contribute-cpuLimit: true
       che-code.eclipse.org/contribute-cpuRequest: true
-      che-code.eclipse.org/contribute-endpoint/che-code: 3100
       che-code.eclipse.org/contribute-entry-point: true
       che-code.eclipse.org/contribute-memoryLimit: true
       che-code.eclipse.org/contribute-memoryRequest: true
@@ -22,18 +21,6 @@ components:
         - /checode/entrypoint-volume.sh
       cpuLimit: 500m
       cpuRequest: 30m
-      endpoints:
-        - attributes:
-            contributed-by: che-code.eclipse.org
-            cookiesAuthEnabled: true
-            discoverable: false
-            type: main
-            urlRewriteSupported: true
-          exposure: public
-          name: che-code
-          protocol: https
-          secure: false
-          targetPort: 3100
       env:
         - name: CHE_DASHBOARD_URL
           value: 'https://devspaces.apps.dev.dpaas.dodiis.mil'
