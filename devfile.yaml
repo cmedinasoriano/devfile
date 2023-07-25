@@ -43,22 +43,6 @@ components:
           name: code-redirect-1
           protocol: http
           targetPort: 13131
-        - attributes:
-            contributed-by: che-code.eclipse.org
-            discoverable: false
-            urlRewriteSupported: false
-          exposure: public
-          name: code-redirect-2
-          protocol: http
-          targetPort: 13132
-        - attributes:
-            contributed-by: che-code.eclipse.org
-            discoverable: false
-            urlRewriteSupported: false
-          exposure: public
-          name: code-redirect-3
-          protocol: http
-          targetPort: 13133
       env:
         - name: CHE_DASHBOARD_URL
           value: 'https://devspaces.apps.dev.dpaas.dodiis.mil'
