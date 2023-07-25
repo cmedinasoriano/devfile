@@ -19,6 +19,8 @@ components:
     container:
       command:
         - /checode/entrypoint-volume.sh
+        - 'dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo'
+        - 'dnf install docker-ce'
       cpuLimit: 500m
       cpuRequest: 30m
       env:
@@ -30,7 +32,7 @@ components:
           value: 'http://plugin-registry.openshift-operators.svc:8080/v3'
         - name: OPENVSX_REGISTRY_URL
           value: 'https://open-vsx.org'
-      image: 'registry.hub.docker.com/library/docker'
+      image: 'registry.redhat.io/devspaces/udi-rhel8@sha256:99ff1b5c541855e4cf368816c4bcdcdc86d32304023f72c4443213a4032ef05b'
       memoryLimit: 1024Mi
       memoryRequest: 256Mi
       sourceMapping: /projects
